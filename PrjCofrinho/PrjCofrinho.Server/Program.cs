@@ -26,6 +26,5 @@ app.UseFileServer();
 app.Run();
 
 // Classes do banco de dados "traduzidas" para o backend
-public record Pessoas(int Id_Pessoa, String Nome, int Idade);
 public record Categorias(int Id_Categoria, String Descricao, int Finalidade);
 public record Transacoes(int Id_Transacao, String Descricao, int Valor, bool Tipo, int Id_Categoria, int Id_Pessoa);

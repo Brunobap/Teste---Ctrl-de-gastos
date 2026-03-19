@@ -3394,23 +3394,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Brunobap\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Bruno\\.nuget\\packages\\": {},
+    "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Brunobap\\Desktop\\ProgLab\\Github\\Teste---Ctrl-de-gastos\\PrjCofrinho\\PrjCofrinho.AppHost\\PrjCofrinho.AppHost.csproj",
+      "projectUniqueName": "F:\\ProgLab\\Github\\Teste---Ctrl-de-gastos\\PrjCofrinho\\PrjCofrinho.AppHost\\PrjCofrinho.AppHost.csproj",
       "projectName": "PrjCofrinho.AppHost",
-      "projectPath": "C:\\Users\\Brunobap\\Desktop\\ProgLab\\Github\\Teste---Ctrl-de-gastos\\PrjCofrinho\\PrjCofrinho.AppHost\\PrjCofrinho.AppHost.csproj",
-      "packagesPath": "C:\\Users\\Brunobap\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Brunobap\\Desktop\\ProgLab\\Github\\Teste---Ctrl-de-gastos\\PrjCofrinho\\PrjCofrinho.AppHost\\obj\\",
+      "projectPath": "F:\\ProgLab\\Github\\Teste---Ctrl-de-gastos\\PrjCofrinho\\PrjCofrinho.AppHost\\PrjCofrinho.AppHost.csproj",
+      "packagesPath": "C:\\Users\\Bruno\\.nuget\\packages\\",
+      "outputPath": "F:\\ProgLab\\Github\\Teste---Ctrl-de-gastos\\PrjCofrinho\\PrjCofrinho.AppHost\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Brunobap\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Bruno\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -3438,7 +3438,7 @@
         "auditLevel": "low",
         "auditMode": "all"
       },
-      "SdkAnalysisLevel": "10.0.100"
+      "SdkAnalysisLevel": "10.0.200"
     },
     "frameworks": {
       "net10.0": {
@@ -3480,7 +3480,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.103/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.CSharp": "(,4.7.32767]",
           "Microsoft.VisualBasic": "(,10.4.32767]",

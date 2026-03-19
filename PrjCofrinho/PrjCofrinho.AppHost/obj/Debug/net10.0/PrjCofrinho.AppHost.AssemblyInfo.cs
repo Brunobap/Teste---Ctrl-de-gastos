@@ -12,23 +12,21 @@ using System;
 using System.Reflection;
 
 [assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("beb0e538-883f-43af-b38a-b26536de4bce")]
-[assembly: System.Reflection.AssemblyMetadata("dcpclipath", "C:\\Users\\Brunobap\\.nuget\\packages\\aspire.hosting.orchestration.win-x64\\13.1.0\\too" +
-    "ls\\dcp.exe")]
-[assembly: System.Reflection.AssemblyMetadata("dcpextensionpaths", "C:\\Users\\Brunobap\\.nuget\\packages\\aspire.hosting.orchestration.win-x64\\13.1.0\\too" +
-    "ls\\ext\\")]
-[assembly: System.Reflection.AssemblyMetadata("dcpbinpath", "C:\\Users\\Brunobap\\.nuget\\packages\\aspire.hosting.orchestration.win-x64\\13.1.0\\too" +
-    "ls\\ext\\bin\\")]
-[assembly: System.Reflection.AssemblyMetadata("apphostprojectpath", "C:\\Users\\Brunobap\\Desktop\\ProgLab\\Github\\Teste---Ctrl-de-gastos\\PrjCofrinho\\PrjCo" +
-    "frinho.AppHost")]
+[assembly: System.Reflection.AssemblyMetadata("dcpclipath", "C:\\Users\\Bruno\\.nuget\\packages\\aspire.hosting.orchestration.win-x64\\13.1.0\\tools\\" +
+    "dcp.exe")]
+[assembly: System.Reflection.AssemblyMetadata("dcpextensionpaths", "C:\\Users\\Bruno\\.nuget\\packages\\aspire.hosting.orchestration.win-x64\\13.1.0\\tools\\" +
+    "ext\\")]
+[assembly: System.Reflection.AssemblyMetadata("dcpbinpath", "C:\\Users\\Bruno\\.nuget\\packages\\aspire.hosting.orchestration.win-x64\\13.1.0\\tools\\" +
+    "ext\\bin\\")]
+[assembly: System.Reflection.AssemblyMetadata("apphostprojectpath", "F:\\ProgLab\\Github\\Teste---Ctrl-de-gastos\\PrjCofrinho\\PrjCofrinho.AppHost")]
 [assembly: System.Reflection.AssemblyMetadata("apphostprojectname", "PrjCofrinho.AppHost.csproj")]
-[assembly: System.Reflection.AssemblyMetadata("aspiredashboardpath", "C:\\Users\\Brunobap\\.nuget\\packages\\aspire.dashboard.sdk.win-x64\\13.1.0\\tools\\Aspir" +
-    "e.Dashboard.exe")]
-[assembly: System.Reflection.AssemblyMetadataAttribute("apphostprojectbaseintermediateoutputpath", "C:\\Users\\Brunobap\\Desktop\\ProgLab\\Github\\Teste---Ctrl-de-gastos\\PrjCofrinho\\PrjCo" +
-    "frinho.AppHost\\obj\\")]
+[assembly: System.Reflection.AssemblyMetadata("aspiredashboardpath", "C:\\Users\\Bruno\\.nuget\\packages\\aspire.dashboard.sdk.win-x64\\13.1.0\\tools\\Aspire.D" +
+    "ashboard.exe")]
+[assembly: System.Reflection.AssemblyMetadataAttribute("apphostprojectbaseintermediateoutputpath", "F:\\ProgLab\\Github\\Teste---Ctrl-de-gastos\\PrjCofrinho\\PrjCofrinho.AppHost\\obj\\")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("PrjCofrinho.AppHost")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9946d9a3470e0c1f2a931c36e227dacd9acb258a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ff29f3201c15cac6e6b4bdd299deea780b40dc6b")]
 [assembly: System.Reflection.AssemblyProductAttribute("PrjCofrinho.AppHost")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PrjCofrinho.AppHost")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
