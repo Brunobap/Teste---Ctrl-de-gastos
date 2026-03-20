@@ -18,21 +18,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Pessoas.cs",
-              "DocumentMoniker": "F:\\ProgLab\\Github\\Teste---Ctrl-de-gastos\\PrjCofrinho\\PrjCofrinho.Server\\Classes\\Pessoas.cs",
-              "RelativeDocumentMoniker": "PrjCofrinho.Server\\Classes\\Pessoas.cs",
-              "ToolTip": "F:\\ProgLab\\Github\\Teste---Ctrl-de-gastos\\PrjCofrinho\\PrjCofrinho.Server\\Classes\\Pessoas.cs",
-              "RelativeToolTip": "PrjCofrinho.Server\\Classes\\Pessoas.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAwFwAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-19T01:57:38.101Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -41,10 +28,22 @@
               "RelativeDocumentMoniker": "PrjCofrinho.Server\\Program.cs",
               "ToolTip": "F:\\ProgLab\\Github\\Teste---Ctrl-de-gastos\\PrjCofrinho\\PrjCofrinho.Server\\Program.cs",
               "RelativeToolTip": "PrjCofrinho.Server\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-26T02:23:14.519Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Pessoas.cs",
+              "DocumentMoniker": "F:\\ProgLab\\Github\\Teste---Ctrl-de-gastos\\PrjCofrinho\\PrjCofrinho.Server\\Classes\\Pessoas.cs",
+              "RelativeDocumentMoniker": "PrjCofrinho.Server\\Classes\\Pessoas.cs",
+              "ToolTip": "F:\\ProgLab\\Github\\Teste---Ctrl-de-gastos\\PrjCofrinho\\PrjCofrinho.Server\\Classes\\Pessoas.cs",
+              "RelativeToolTip": "PrjCofrinho.Server\\Classes\\Pessoas.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGQAAABuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-19T01:57:38.101Z"
             }
           ]
         }

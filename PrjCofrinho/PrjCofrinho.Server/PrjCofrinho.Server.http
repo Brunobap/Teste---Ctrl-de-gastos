@@ -1,6 +1,9 @@
 @Server_HostAddress = http://localhost:5337
 
-GET {{Server_HostAddress}}/api/weatherforecast/
+
+# Testes para o CRUD de Pessoas
+
+GET {{Server_HostAddress}}/pessoas/
 Accept: application/json
 
 ###

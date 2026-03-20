@@ -44,18 +44,31 @@
             return pessoa;
         }
 
+        /// <summary>
+        /// Remove uma pessoa do servidor com base em um objeto
+        /// </summary>
+        /// <param name="pessoa">Pessoa que será retirada da lista</param>
         public void DeletePessoa(Pessoas pessoa)
         {
             // Mandar aquela instância da lista, se ela não estiver lá nada muda
             _pessoas.Remove(pessoa);
         }
 
+        /// <summary>
+        /// Remove uma pessoa do servidor com base no ID da tabela
+        /// </summary>
+        /// <param name="id">ID da pessoa que será retirada da lista</param>
         public void DeletePessoaById(int id)
         {
             // Procurar de todos os itens da lista, e remover aquele onde o ID bate
             _pessoas.RemoveAll(pessoa => pessoa.Id_Pessoa == id);
         }
 
+        /// <summary>
+        /// Procura uma pessoa do servidor com base no ID da tabela
+        /// </summary>
+        /// <param name="id">ID da pessoa que será buscada da lista</param>
+        /// <returns>O objeto da pessoa salva ou um nulo, caso ela não esteja na lista</returns>
         public Pessoas? GetPessoaById(int id)
         {
             // Procurar de todos os itens da lista
@@ -71,12 +84,21 @@
             return null;
         }
 
+        /// <summary>
+        /// Volta toda a lista de pessoas salvas no sistema
+        /// </summary>
+        /// <returns>Uma lista com todos os objetos que estiverem no sistema</returns>
         public List<Pessoas> GetPessoas()
         {
             // Simplesmente mostrar o conjunto todo
             return _pessoas;
         }
 
+        /// <summary>
+        /// Procura uma pessoa do servidor com base no ID da tabela
+        /// </summary>
+        /// <param name="pessoa">Novo objeto pessoa que será salvo na lista</param>
+        /// <returns>O novo objeto da pessoa salva, caso ela esteja na lista. Ou um nulo, caso ela não esteja.</returns>
         public Pessoas? UpdatePessoa(Pessoas pessoa)
         {
             // Procurar de todos os itens da lista
