@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PrjCofrinho.Server")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0b5c20475d25bcf7aace8c827fc525f129feecc3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+577d93c1e99a5e43a983898e9383e28ca62e5156")]
 [assembly: System.Reflection.AssemblyProductAttribute("PrjCofrinho.Server")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PrjCofrinho.Server")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

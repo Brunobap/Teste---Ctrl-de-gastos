@@ -6,11 +6,72 @@
   },
   "servers": [
     {
-      "url": "https://localhost:57733"
+      "url": "https://localhost:55639"
     },
     {
-      "url": "http://localhost:57734"
+      "url": "http://localhost:55640"
     }
   ],
-  "paths": { }
+  "paths": {
+    "/pessoas": {
+      "get": {
+        "tags": [
+          "PrjCofrinho.Server"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Pessoas"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Pessoas": {
+        "required": [
+          "id_Pessoa",
+          "nome",
+          "idade"
+        ],
+        "type": "object",
+        "properties": {
+          "id_Pessoa": {
+            "pattern": "^-?(?:0|[1-9]\\d*)$",
+            "type": [
+              "integer",
+              "string"
+            ],
+            "format": "int32"
+          },
+          "nome": {
+            "type": "string"
+          },
+          "idade": {
+            "pattern": "^-?(?:0|[1-9]\\d*)$",
+            "type": [
+              "integer",
+              "string"
+            ],
+            "format": "int32"
+          }
+        }
+      }
+    }
+  },
+  "tags": [
+    {
+      "name": "PrjCofrinho.Server"
+    }
+  ]
 }

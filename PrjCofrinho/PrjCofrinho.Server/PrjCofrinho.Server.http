@@ -4,6 +4,5 @@
 # Testes para o CRUD de Pessoas
 
 GET {{Server_HostAddress}}/pessoas/
-Accept: application/json
 
 ###

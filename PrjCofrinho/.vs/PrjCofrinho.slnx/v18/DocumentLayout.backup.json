@@ -7,6 +7,10 @@
       "RelativeMoniker": "D:0:0:{D46F550D-0D9E-72A4-EE51-5E2DFD61B99C}|PrjCofrinho.Server\\PrjCofrinho.Server.csproj|solutionrelative:prjcofrinho.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{D46F550D-0D9E-72A4-EE51-5E2DFD61B99C}|PrjCofrinho.Server\\PrjCofrinho.Server.csproj|f:\\proglab\\github\\teste---ctrl-de-gastos\\prjcofrinho\\prjcofrinho.server\\prjcofrinho.server.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{D46F550D-0D9E-72A4-EE51-5E2DFD61B99C}|PrjCofrinho.Server\\PrjCofrinho.Server.csproj|solutionrelative:prjcofrinho.server\\prjcofrinho.server.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D46F550D-0D9E-72A4-EE51-5E2DFD61B99C}|PrjCofrinho.Server\\PrjCofrinho.Server.csproj|f:\\proglab\\github\\teste---ctrl-de-gastos\\prjcofrinho\\prjcofrinho.server\\classes\\pessoas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D46F550D-0D9E-72A4-EE51-5E2DFD61B99C}|PrjCofrinho.Server\\PrjCofrinho.Server.csproj|solutionrelative:prjcofrinho.server\\classes\\pessoas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -18,24 +22,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PrjCofrinho.Server.http",
+              "DocumentMoniker": "F:\\ProgLab\\Github\\Teste---Ctrl-de-gastos\\PrjCofrinho\\PrjCofrinho.Server\\PrjCofrinho.Server.http",
+              "RelativeDocumentMoniker": "PrjCofrinho.Server\\PrjCofrinho.Server.http",
+              "ToolTip": "F:\\ProgLab\\Github\\Teste---Ctrl-de-gastos\\PrjCofrinho\\PrjCofrinho.Server\\PrjCofrinho.Server.http",
+              "RelativeToolTip": "PrjCofrinho.Server\\PrjCofrinho.Server.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2026-03-20T14:21:19.685Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "F:\\ProgLab\\Github\\Teste---Ctrl-de-gastos\\PrjCofrinho\\PrjCofrinho.Server\\Program.cs",
               "RelativeDocumentMoniker": "PrjCofrinho.Server\\Program.cs",
-              "ToolTip": "F:\\ProgLab\\Github\\Teste---Ctrl-de-gastos\\PrjCofrinho\\PrjCofrinho.Server\\Program.cs",
-              "RelativeToolTip": "PrjCofrinho.Server\\Program.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAACQAAAACAAAAAAAAAA==",
+              "ToolTip": "F:\\ProgLab\\Github\\Teste---Ctrl-de-gastos\\PrjCofrinho\\PrjCofrinho.Server\\Program.cs*",
+              "RelativeToolTip": "PrjCofrinho.Server\\Program.cs*",
+              "ViewState": "AgIAACMAAAAAAAAAAAAAAEwAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-26T02:23:14.519Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Pessoas.cs",
               "DocumentMoniker": "F:\\ProgLab\\Github\\Teste---Ctrl-de-gastos\\PrjCofrinho\\PrjCofrinho.Server\\Classes\\Pessoas.cs",
               "RelativeDocumentMoniker": "PrjCofrinho.Server\\Classes\\Pessoas.cs",
