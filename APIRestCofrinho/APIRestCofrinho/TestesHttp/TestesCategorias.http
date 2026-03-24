@@ -1,0 +1,30 @@
+@APIRestCofrinho_HostAddress = http://localhost:5139
+
+### OBS: testes escritos errado (a rota correta é "categorias") são propositais para testar o redirecionamento
+
+### GET de todas categorias
+GET {{APIRestCofrinho_HostAddress}}/categorias/
+
+### GET de 1 categoria pelo ID
+GET {{APIRestCofrinho_HostAddress}}/categoria/1
+
+### POST de 1 categoria
+POST {{APIRestCofrinho_HostAddress}}/categoria/
+Content-Type: application/json
+{
+  "id_categoria": 1,
+  "descricao": "contas",
+  "finalidade": -1
+}
+
+### PUT para atualizar uma categoria
+PUT {{APIRestCofrinho_HostAddress}}/categoria/
+Content-Type: application/json
+{
+  "id_categoria": 1,
+  "descricao": "Salário",
+  "finalidade": 1
+}
+
+### DELETE uma categoria pelo ID
+DELETE {{APIRestCofrinho_HostAddress}}/categoria/1

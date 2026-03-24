@@ -1,5 +1,7 @@
 @APIRestCofrinho_HostAddress = http://localhost:5139
 
+### OBS: testes escritos errado (a rota correta é "pessoas") são propositis para testar o redirecionamento
+
 ### GET de todas pessoas
 GET {{APIRestCofrinho_HostAddress}}/pessoa/
 

@@ -22,7 +22,7 @@
         #endregion
     }
 
-    // Funções que serão executadas sobre a tabela pessoa
+    // Funções que serão executadas sobre a tabela Pessoas
     public class PessoasService : IPessoas
     {
         // Lista com todas as pessoas

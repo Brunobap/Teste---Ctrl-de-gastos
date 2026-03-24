@@ -1,0 +1,34 @@
+@APIRestCofrinho_HostAddress = http://localhost:5139
+
+### OBS: testes escritos errado (a rota correta é "transacoes") são propositais para testar o redirecionamento
+
+### GET de todas transações
+GET {{APIRestCofrinho_HostAddress}}/transacao/
+
+### GET de 1 transação pelo ID
+GET {{APIRestCofrinho_HostAddress}}/transacao/1
+
+### POST de 1 transação
+POST {{APIRestCofrinho_HostAddress}}/transacoes/
+Content-Type: application/json
+{
+  "id_transacao": 1,
+  "valor": 180,
+  "descricao": "compra Steam Witcher 1-3",
+  "id_categoria": 1,
+  "id_pessoa": 1
+}
+
+### PUT para atualizar uma transação
+PUT {{APIRestCofrinho_HostAddress}}/transacoes/
+Content-Type: application/json
+{
+  "id_transacao": 1,
+  "valor": 230,
+  "descricao": "compra Steam Witcher 1-3 + DLCs",
+  "id_categoria": 1,
+  "id_pessoa": 1
+}
+
+### DELETE uma transação pelo ID
+DELETE {{APIRestCofrinho_HostAddress}}/transacoes/1
