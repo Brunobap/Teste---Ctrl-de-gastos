@@ -179,16 +179,9 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "PrjCofrinho.Server.Classes.Pessoas",
-        "MediaTypes": [
-          "application/json"
-        ],
-        "StatusCode": 200
-      },
-      {
         "Type": "System.Void",
         "MediaTypes": [],
-        "StatusCode": 204
+        "StatusCode": 200
       }
     ]
   },

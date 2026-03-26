@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("APIRestCofrinho")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e24e156d175c8adb3f9d6900cacfa6b64fbd3810")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0b61a496ebecf8bc67d590c593449364ef61100c")]
 [assembly: System.Reflection.AssemblyProductAttribute("APIRestCofrinho")]
 [assembly: System.Reflection.AssemblyTitleAttribute("APIRestCofrinho")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

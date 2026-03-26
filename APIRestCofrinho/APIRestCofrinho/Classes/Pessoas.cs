@@ -1,4 +1,6 @@
-﻿namespace PrjCofrinho.Server.Classes
+﻿using APIRestCofrinho;
+
+namespace PrjCofrinho.Server.Classes
 {
     // Classe com o objeto abstrato que será salvo nos dados
     public record Pessoas(int Id_Pessoa, String Nome, int Idade);
@@ -15,7 +17,7 @@
         Pessoas? GetPessoaById(int id);
 
         // Atualizar
-        Pessoas? UpdatePessoa(Pessoas pessoa);
+        void UpdatePessoa(Pessoas pessoa);
 
         // Remover
         void DeletePessoaById(int id);
@@ -25,19 +27,18 @@
     // Funções que serão executadas sobre a tabela Pessoas
     public class PessoasService : IPessoas
     {
-        // Lista com todas as pessoas
-        // TODO: salvar em um banco de dados, atualmente só salva na memória
-        private readonly List<Pessoas> _pessoas = [];
-
         /// <summary>
         /// Cria uma nova pessoa no servidor com base em um objeto
         /// </summary>
-        /// <param name="pessoa">Nova pessoa salva no servidor</param>
-        /// <returns>Se bem sucedido, retorna a pessoa que foi adicionada.</returns>
+        /// <param name="pessoa">Nova pessoa salva no servidor.</param>
+        /// <returns>Se bem sucedido, retorna a pessoa que foi adicionada, o id real dessa pessoa não é decidido por aqui e nem é devolvido aqui.</returns>
         public Pessoas CreatePessoa(Pessoas pessoa)
         {
-            // Colocar o novo item dentro da lista
-            _pessoas.Add(pessoa);
+            // Mandar criar a nova entrada na tabela
+            string sqlQuery = $"INSERT INTO pessoas (nome, idade) VALUES ('{pessoa.Nome}', {pessoa.Idade});";
+
+            // Enviar o pedido de criação
+            ConexaoBD.executarQuery(sqlQuery, null);
 
             // Mostrar o item que foi adicionado
             return pessoa;
@@ -49,8 +50,13 @@
         /// <param name="id">ID da pessoa que será retirada da lista</param>
         public void DeletePessoaById(int id)
         {
-            // Procurar de todos os itens da lista, e remover aquele onde o ID bate
-            _pessoas.RemoveAll(pessoa => pessoa.Id_Pessoa == id);
+            // Ao deletar uma pessoa, suas transações também devem ser deletadas
+            string sqlQuery = $"DELETE FROM transacoes WHERE id_pessoa = {id};" +
+                // Depois remover a pessoa da sua própria tabela
+                $"DELETE FROM pessoas WHERE id_pessoa = {id};";
+
+            // Enviar o pedido de remoção da pessoa
+            ConexaoBD.executarQuery(sqlQuery, null);
         }
 
         /// <summary>
@@ -60,17 +66,29 @@
         /// <returns>O objeto da pessoa salva ou um nulo, caso ela não esteja na lista</returns>
         public Pessoas? GetPessoaById(int id)
         {
-            // Procurar de todos os itens da lista
-            foreach (Pessoas pessoa in _pessoas)
-            {
-                // Se o ID for de alguém
-                if (pessoa.Id_Pessoa == id)
-                    // Enviar esse registro
-                    return pessoa;
-            }
+            // Selecionar de pessoas só quem tem esse id
+            string sqlQuery = $"SELECT * FROM pessoas WHERE id_pessoa = {id};";
 
-            // Se ninguém tiver esse ID, mandar um item nulo
-            return null;
+            // Base onde talvez o objeto da pessoa seja criada, caso algo retorne, começa como nula
+            Pessoas? pessoa = null;
+
+            // Mandar apagar as suas transações
+            ConexaoBD.executarQuery(sqlQuery, (result) =>
+            {
+                // Tentar montar o objeto pessoa com esse resultado
+                if (result.Read())
+                {
+                    // Pegar os dados lidos
+                    string nome = result.GetString(1);
+                    int idade = result.GetInt32(2);
+
+                    // Enviar um objeto com esses dados
+                    pessoa = new Pessoas(id, nome, idade);
+                }
+            });
+            
+            // Retornar o que foi achado na busca
+            return pessoa;
         }
 
         /// <summary>
@@ -79,36 +97,43 @@
         /// <returns>Uma lista com todos os objetos que estiverem no sistema</returns>
         public List<Pessoas> GetPessoas()
         {
+            // Selecionar todas as entradas do conjunto
+            string sqlQuery = $"SELECT * FROM pessoas;";
+
+            // Lista que vai ter todas as entradas achadas 
+            List<Pessoas> pessoas = [];
+
+            // Mandar apagar as suas transações
+            ConexaoBD.executarQuery(sqlQuery, (result) =>
+            {
+                // Tentar montar o objeto pessoa com esse resultado
+                while (result.Read())
+                {
+                    // Pegar os dados lidos
+                    int id = result.GetInt32(0);
+                    string nome = result.GetString(1);
+                    int idade = result.GetInt32(2);
+
+                    // Enviar um objeto com esses dados
+                    pessoas.Add(new Pessoas(id, nome, idade));
+                }
+            });
+
             // Simplesmente mostrar o conjunto todo
-            return _pessoas;
+            return pessoas;
         }
 
         /// <summary>
         /// Procura uma pessoa do servidor com base no ID da tabela
         /// </summary>
         /// <param name="pessoa">Novo objeto pessoa que será salvo na lista</param>
-        /// <returns>O novo objeto da pessoa salva, caso ela esteja na lista. Ou um nulo, caso ela não esteja.</returns>
-        public Pessoas? UpdatePessoa(Pessoas pessoa)
+        public void UpdatePessoa(Pessoas pessoa)
         {
-            // Procurar de todos os itens da lista
-            foreach (Pessoas p in _pessoas)
-            {
-                // Se o ID for de alguém
-                if (p.Id_Pessoa == pessoa.Id_Pessoa)
-                {
-                    // TODO: com certeza tem um jeito melhor de fazer essa atualizar
-                    // Remover o anterior
-                    _pessoas.Remove(p);
+            // Selecionar todas as entradas do conjunto
+            string sqlQuery = $"UPDATE pessoas SET Nome='{pessoa.Nome}', Idade={pessoa.Idade} WHERE Id_Pessoa = {pessoa.Id_Pessoa};";
 
-                    // E adicionar o novo
-                    _pessoas.Add(pessoa);
-
-                    return p;
-                }
-            }
-
-            // Se ninguém tiver esse ID, mandar um item nulo
-            return null;
+            // Mandar o pedido de atualização
+            ConexaoBD.executarQuery(sqlQuery, null);
         }
     }
 }

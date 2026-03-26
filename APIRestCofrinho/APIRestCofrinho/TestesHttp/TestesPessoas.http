@@ -6,25 +6,24 @@
 GET {{APIRestCofrinho_HostAddress}}/pessoa/
 
 ### GET de 1 pessoa pelo ID
-GET {{APIRestCofrinho_HostAddress}}/pessoa/1
+GET {{APIRestCofrinho_HostAddress}}/pessoa/5
 
 ### POST de 1 pessoa
-POST {{APIRestCofrinho_HostAddress}}/pessoa/
+POST {{APIRestCofrinho_HostAddress}}/pessoas/
 Content-Type: application/json
 {
-  "id_pessoa": 1,
-  "nome": "zézinho",
-  "idade": 15
+  "nome": "zé",
+  "idade": 40
 }
 
 ### PUT para atualizar uma pessoa
 PUT {{APIRestCofrinho_HostAddress}}/pessoa/
 Content-Type: application/json
 {
-  "id_pessoa": 1,
-  "nome": "zé",
-  "idade": 18
+  "id_pessoa": 7,
+  "nome": "zézão",
+  "idade": 36
 }
 
 ### DELETE uma pessoa pelo ID
-DELETE {{APIRestCofrinho_HostAddress}}/pessoa/1
+DELETE {{APIRestCofrinho_HostAddress}}/pessoas/3

@@ -1,5 +1,7 @@
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Rewrite;
+using Microsoft.Data.SqlClient;
+using MySqlConnector;
 using PrjCofrinho.Server.Classes;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -46,17 +48,13 @@ app.MapPost("/pessoas", (IPessoas servico, Pessoas pessoa) =>
 });
 
 // Atualizar um registro da tabela
-app.MapPut("/pessoas", Results<Ok<Pessoas>, NoContent> (IPessoas servico, Pessoas pessoa) =>
+app.MapPut("/pessoas", (IPessoas servico, Pessoas pessoa) =>
 {
     // Mandar a atualizar a tabela
-    var alvo = servico.UpdatePessoa(pessoa);
+    servico.UpdatePessoa(pessoa);
 
-    // Ver se o item estava na tabela mesmo
-    return alvo != null
-        // Se sim, retornar status positivo e o objeto
-        ? TypedResults.Ok(alvo)
-        // se não, só voltar status negativo
-        : TypedResults.NoContent();
+    // Retornar que houve sucesso, e a atualização foi feita
+    return TypedResults.Ok();
 });
 
 // Apagar uma pessoa pelo seu ID
