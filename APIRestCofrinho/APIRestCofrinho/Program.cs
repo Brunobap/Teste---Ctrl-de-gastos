@@ -19,7 +19,7 @@ builder.Services.AddSingleton<ITransacoes>(new TransacoesService());
 
 var app = builder.Build();
 
-#region Mapeamoentos
+#region Mapeamoentos  
     #region Mapeamento do CRUD de Pessoas
 // Pegar todas as pessoas
 app.MapGet("/pessoas", (IPessoas servico) => servico.GetPessoas());
@@ -96,17 +96,13 @@ app.MapPost("/categorias", (ICategorias servico, Categorias categoria) =>
 });
 
 // Atualizar um registro da tabela
-app.MapPut("/categorias", Results<Ok<Categorias>, NoContent> (ICategorias servico, Categorias categoria) =>
+app.MapPut("/categorias", (ICategorias servico, Categorias categoria) =>
 {
     // Mandar a atualizar a tabela
-    var alvo = servico.UpdateCategoria(categoria);
+   servico.UpdateCategoria(categoria);
 
-    // Ver se o item estava na tabela mesmo
-    return alvo != null
-        // Se sim, retornar status positivo e o objeto
-        ? TypedResults.Ok(alvo)
-        // se não, só voltar status negativo
-        : TypedResults.NoContent();
+    // Retornar que houve sucesso, e a atualização foi feita
+    return TypedResults.Ok();
 });
 
 // Apagar uma categoria pelo seu ID
@@ -148,17 +144,13 @@ app.MapPost("/transacoes", (ITransacoes servico, Transacoes transacao) =>
 });
 
 // Atualizar um registro da tabela
-app.MapPut("/transacoes", Results<Ok<Transacoes>, NoContent> (ITransacoes servico, Transacoes transacao) =>
+app.MapPut("/transacoes", (ITransacoes servico, Transacoes transacao) =>
 {
     // Mandar a atualizar a tabela
-    var alvo = servico.UpdateTransacao(transacao);
+    servico.UpdateTransacao(transacao);
 
-    // Ver se o item estava na tabela mesmo
-    return alvo != null
-        // Se sim, retornar status positivo e o objeto
-        ? TypedResults.Ok(alvo)
-        // se não, só voltar status negativo
-        : TypedResults.NoContent();
+    // Retornar que houve sucesso, e a atualização foi feita
+    return TypedResults.Ok();
 });
 
 // Apagar uma transação pelo seu ID
@@ -171,7 +163,6 @@ app.MapDelete("/transacoes/{id}", (ITransacoes servico, int id) =>
     return TypedResults.Ok();
 });
 #endregion
-
 #endregion
 
 #region Middlewares

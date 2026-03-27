@@ -12,22 +12,21 @@ GET {{APIRestCofrinho_HostAddress}}/transacao/1
 POST {{APIRestCofrinho_HostAddress}}/transacoes/
 Content-Type: application/json
 {
-  "id_transacao": 1,
-  "valor": 180,
-  "descricao": "compra Steam Witcher 1-3",
-  "id_categoria": 1,
-  "id_pessoa": 1
+  "descricao": "Salário Bernardo",
+  "valor": 3500,
+  "id_categoria": 4,
+  "id_pessoa": 3
 }
 
 ### PUT para atualizar uma transação
 PUT {{APIRestCofrinho_HostAddress}}/transacoes/
 Content-Type: application/json
 {
-  "id_transacao": 1,
-  "valor": 230,
-  "descricao": "compra Steam Witcher 1-3 + DLCs",
-  "id_categoria": 1,
-  "id_pessoa": 1
+  "id_Transacao": 8,
+  "valor": 2000,
+  "descricao": "Salário Psicologa",
+  "id_categoria": 4,
+  "id_pessoa": 3
 }
 
 ### DELETE uma transação pelo ID

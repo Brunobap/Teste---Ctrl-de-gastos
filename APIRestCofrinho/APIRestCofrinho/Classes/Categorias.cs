@@ -27,10 +27,6 @@ namespace PrjCofrinho.Server.Classes
     // Funções que serão executadas sobre a tabela Categorias
     public class CategoriasService : ICategorias
     {
-        // Lista com todas as categorias
-        // TODO: salvar em um banco de dados, atualmente só salva na memória
-        private readonly List<Categorias> _categorias = [];
-
         /// <summary>
         /// Cria uma nova categoria no servidor com base em um objeto
         /// </summary>
@@ -39,7 +35,7 @@ namespace PrjCofrinho.Server.Classes
         public Categorias CreateCategoria(Categorias categoria)
         {
             // Mandar criar a nova entrada na tabela
-            string sqlQuery = $"INSERT INTO pessoas (descricao, finalidade) VALUES ('{categoria.Descricao}', {categoria.Finalidade});";
+            string sqlQuery = $"INSERT INTO categorias (descricao, finalidade) VALUES ('{categoria.Descricao}', {categoria.Finalidade});";
 
             // Enviar o pedido de criação
             ConexaoBD.executarQuery(sqlQuery, null);
@@ -134,7 +130,7 @@ namespace PrjCofrinho.Server.Classes
         public void UpdateCategoria(Categorias categoria)
         {
             // Selecionar todas as entradas do conjunto
-            string sqlQuery = $"UPDATE pessoas SET Descricao='{categoria.Descricao}', Finalidade={categoria.Finalidade} WHERE Id_Pessoa = {categoria.Id_Categoria};";
+            string sqlQuery = $"UPDATE categorias SET Descricao='{categoria.Descricao}', Finalidade={categoria.Finalidade} WHERE Id_Categoria = {categoria.Id_Categoria};";
 
             // Mandar o pedido de atualização
             ConexaoBD.executarQuery(sqlQuery, null);

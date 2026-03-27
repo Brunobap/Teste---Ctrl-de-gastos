@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "F:\\ProgLab\\Github\\Teste---Ctrl-de-gastos\\APIRestCofrinho\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0C36FD72-D7FF-DD0B-701B-453628BDB8A8}|APIRestCofrinho\\APIRestCofrinho.csproj|f:\\proglab\\github\\teste---ctrl-de-gastos\\apirestcofrinho\\apirestcofrinho\\classes\\pessoas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0C36FD72-D7FF-DD0B-701B-453628BDB8A8}|APIRestCofrinho\\APIRestCofrinho.csproj|solutionrelative:apirestcofrinho\\classes\\pessoas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0C36FD72-D7FF-DD0B-701B-453628BDB8A8}|APIRestCofrinho\\APIRestCofrinho.csproj|f:\\proglab\\github\\teste---ctrl-de-gastos\\apirestcofrinho\\apirestcofrinho\\classes\\transacoes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C36FD72-D7FF-DD0B-701B-453628BDB8A8}|APIRestCofrinho\\APIRestCofrinho.csproj|solutionrelative:apirestcofrinho\\classes\\transacoes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0C36FD72-D7FF-DD0B-701B-453628BDB8A8}|APIRestCofrinho\\APIRestCofrinho.csproj|f:\\proglab\\github\\teste---ctrl-de-gastos\\apirestcofrinho\\apirestcofrinho\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0C36FD72-D7FF-DD0B-701B-453628BDB8A8}|APIRestCofrinho\\APIRestCofrinho.csproj|solutionrelative:apirestcofrinho\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0C36FD72-D7FF-DD0B-701B-453628BDB8A8}|APIRestCofrinho\\APIRestCofrinho.csproj|f:\\proglab\\github\\teste---ctrl-de-gastos\\apirestcofrinho\\apirestcofrinho\\testeshttp\\testestransacoes.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{0C36FD72-D7FF-DD0B-701B-453628BDB8A8}|APIRestCofrinho\\APIRestCofrinho.csproj|solutionrelative:apirestcofrinho\\testeshttp\\testestransacoes.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0C36FD72-D7FF-DD0B-701B-453628BDB8A8}|APIRestCofrinho\\APIRestCofrinho.csproj|f:\\proglab\\github\\teste---ctrl-de-gastos\\apirestcofrinho\\apirestcofrinho\\conexaobd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -17,6 +17,18 @@
     {
       "AbsoluteMoniker": "D:0:0:{0C36FD72-D7FF-DD0B-701B-453628BDB8A8}|APIRestCofrinho\\APIRestCofrinho.csproj|f:\\proglab\\github\\teste---ctrl-de-gastos\\apirestcofrinho\\apirestcofrinho\\testeshttp\\testespessoas.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
       "RelativeMoniker": "D:0:0:{0C36FD72-D7FF-DD0B-701B-453628BDB8A8}|APIRestCofrinho\\APIRestCofrinho.csproj|solutionrelative:apirestcofrinho\\testeshttp\\testespessoas.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C36FD72-D7FF-DD0B-701B-453628BDB8A8}|APIRestCofrinho\\APIRestCofrinho.csproj|f:\\proglab\\github\\teste---ctrl-de-gastos\\apirestcofrinho\\apirestcofrinho\\testeshttp\\testescategorias.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{0C36FD72-D7FF-DD0B-701B-453628BDB8A8}|APIRestCofrinho\\APIRestCofrinho.csproj|solutionrelative:apirestcofrinho\\testeshttp\\testescategorias.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C36FD72-D7FF-DD0B-701B-453628BDB8A8}|APIRestCofrinho\\APIRestCofrinho.csproj|f:\\proglab\\github\\teste---ctrl-de-gastos\\apirestcofrinho\\apirestcofrinho\\classes\\pessoas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C36FD72-D7FF-DD0B-701B-453628BDB8A8}|APIRestCofrinho\\APIRestCofrinho.csproj|solutionrelative:apirestcofrinho\\classes\\pessoas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C36FD72-D7FF-DD0B-701B-453628BDB8A8}|APIRestCofrinho\\APIRestCofrinho.csproj|f:\\proglab\\github\\teste---ctrl-de-gastos\\apirestcofrinho\\apirestcofrinho\\classes\\categorias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C36FD72-D7FF-DD0B-701B-453628BDB8A8}|APIRestCofrinho\\APIRestCofrinho.csproj|solutionrelative:apirestcofrinho\\classes\\categorias.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,19 +38,84 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TestesPessoas.http",
+              "DocumentMoniker": "F:\\ProgLab\\Github\\Teste---Ctrl-de-gastos\\APIRestCofrinho\\APIRestCofrinho\\TestesHttp\\TestesPessoas.http",
+              "RelativeDocumentMoniker": "APIRestCofrinho\\TestesHttp\\TestesPessoas.http",
+              "ToolTip": "F:\\ProgLab\\Github\\Teste---Ctrl-de-gastos\\APIRestCofrinho\\APIRestCofrinho\\TestesHttp\\TestesPessoas.http",
+              "RelativeToolTip": "APIRestCofrinho\\TestesHttp\\TestesPessoas.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2026-03-27T15:16:46.863Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TestesCategorias.http",
+              "DocumentMoniker": "F:\\ProgLab\\Github\\Teste---Ctrl-de-gastos\\APIRestCofrinho\\APIRestCofrinho\\TestesHttp\\TestesCategorias.http",
+              "RelativeDocumentMoniker": "APIRestCofrinho\\TestesHttp\\TestesCategorias.http",
+              "ToolTip": "F:\\ProgLab\\Github\\Teste---Ctrl-de-gastos\\APIRestCofrinho\\APIRestCofrinho\\TestesHttp\\TestesCategorias.http",
+              "RelativeToolTip": "APIRestCofrinho\\TestesHttp\\TestesCategorias.http",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABYAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2026-03-27T14:51:05.973Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "F:\\ProgLab\\Github\\Teste---Ctrl-de-gastos\\APIRestCofrinho\\APIRestCofrinho\\Program.cs",
-              "RelativeDocumentMoniker": "APIRestCofrinho\\Program.cs",
-              "ToolTip": "F:\\ProgLab\\Github\\Teste---Ctrl-de-gastos\\APIRestCofrinho\\APIRestCofrinho\\Program.cs",
-              "RelativeToolTip": "APIRestCofrinho\\Program.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAAADUAAAAEAAAAAAAAAA==",
+              "Title": "TestesTransacoes.http",
+              "DocumentMoniker": "F:\\ProgLab\\Github\\Teste---Ctrl-de-gastos\\APIRestCofrinho\\APIRestCofrinho\\TestesHttp\\TestesTransacoes.http",
+              "RelativeDocumentMoniker": "APIRestCofrinho\\TestesHttp\\TestesTransacoes.http",
+              "ToolTip": "F:\\ProgLab\\Github\\Teste---Ctrl-de-gastos\\APIRestCofrinho\\APIRestCofrinho\\TestesHttp\\TestesTransacoes.http",
+              "RelativeToolTip": "APIRestCofrinho\\TestesHttp\\TestesTransacoes.http",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwA8AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2026-03-27T00:58:21.427Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Transacoes.cs",
+              "DocumentMoniker": "F:\\ProgLab\\Github\\Teste---Ctrl-de-gastos\\APIRestCofrinho\\APIRestCofrinho\\Classes\\Transacoes.cs",
+              "RelativeDocumentMoniker": "APIRestCofrinho\\Classes\\Transacoes.cs",
+              "ToolTip": "F:\\ProgLab\\Github\\Teste---Ctrl-de-gastos\\APIRestCofrinho\\APIRestCofrinho\\Classes\\Transacoes.cs",
+              "RelativeToolTip": "APIRestCofrinho\\Classes\\Transacoes.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAwDYAAABJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-25T02:24:51.226Z",
+              "WhenOpened": "2026-03-27T00:27:39.036Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Pessoas.cs",
+              "DocumentMoniker": "F:\\ProgLab\\Github\\Teste---Ctrl-de-gastos\\APIRestCofrinho\\APIRestCofrinho\\Classes\\Pessoas.cs",
+              "RelativeDocumentMoniker": "APIRestCofrinho\\Classes\\Pessoas.cs",
+              "ToolTip": "F:\\ProgLab\\Github\\Teste---Ctrl-de-gastos\\APIRestCofrinho\\APIRestCofrinho\\Classes\\Pessoas.cs",
+              "RelativeToolTip": "APIRestCofrinho\\Classes\\Pessoas.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAgwCYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-25T03:52:32.824Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Categorias.cs",
+              "DocumentMoniker": "F:\\ProgLab\\Github\\Teste---Ctrl-de-gastos\\APIRestCofrinho\\APIRestCofrinho\\Classes\\Categorias.cs",
+              "RelativeDocumentMoniker": "APIRestCofrinho\\Classes\\Categorias.cs",
+              "ToolTip": "F:\\ProgLab\\Github\\Teste---Ctrl-de-gastos\\APIRestCofrinho\\APIRestCofrinho\\Classes\\Categorias.cs",
+              "RelativeToolTip": "APIRestCofrinho\\Classes\\Categorias.cs",
+              "ViewState": "AgIAAGoAAAAAAAAAAAAiwIQAAACNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-25T03:52:05.394Z",
               "EditorCaption": ""
             },
             {
@@ -49,35 +126,9 @@
               "RelativeDocumentMoniker": "APIRestCofrinho\\ConexaoBD.cs",
               "ToolTip": "F:\\ProgLab\\Github\\Teste---Ctrl-de-gastos\\APIRestCofrinho\\APIRestCofrinho\\ConexaoBD.cs",
               "RelativeToolTip": "APIRestCofrinho\\ConexaoBD.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAB4AAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-24T19:02:24.272Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Pessoas.cs",
-              "DocumentMoniker": "F:\\ProgLab\\Github\\Teste---Ctrl-de-gastos\\APIRestCofrinho\\APIRestCofrinho\\Classes\\Pessoas.cs",
-              "RelativeDocumentMoniker": "APIRestCofrinho\\Classes\\Pessoas.cs",
-              "ToolTip": "F:\\ProgLab\\Github\\Teste---Ctrl-de-gastos\\APIRestCofrinho\\APIRestCofrinho\\Classes\\Pessoas.cs",
-              "RelativeToolTip": "APIRestCofrinho\\Classes\\Pessoas.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAIwA4AAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-20T23:35:38.834Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "TestesPessoas.http",
-              "DocumentMoniker": "F:\\ProgLab\\Github\\Teste---Ctrl-de-gastos\\APIRestCofrinho\\APIRestCofrinho\\TestesHttp\\TestesPessoas.http",
-              "RelativeDocumentMoniker": "APIRestCofrinho\\TestesHttp\\TestesPessoas.http",
-              "ToolTip": "F:\\ProgLab\\Github\\Teste---Ctrl-de-gastos\\APIRestCofrinho\\APIRestCofrinho\\TestesHttp\\TestesPessoas.http",
-              "RelativeToolTip": "APIRestCofrinho\\TestesHttp\\TestesPessoas.http",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2026-03-20T23:21:09.959Z",
               "EditorCaption": ""
             }
           ]

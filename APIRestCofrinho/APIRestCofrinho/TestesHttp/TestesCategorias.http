@@ -9,20 +9,19 @@ GET {{APIRestCofrinho_HostAddress}}/categorias/
 GET {{APIRestCofrinho_HostAddress}}/categoria/1
 
 ### POST de 1 categoria
-POST {{APIRestCofrinho_HostAddress}}/categoria/
+POST {{APIRestCofrinho_HostAddress}}/categorias/
 Content-Type: application/json
 {
-  "id_categoria": 1,
-  "descricao": "contas",
+  "descricao": "Alimentos",
   "finalidade": -1
 }
 
 ### PUT para atualizar uma categoria
-PUT {{APIRestCofrinho_HostAddress}}/categoria/
+PUT {{APIRestCofrinho_HostAddress}}/categorias/
 Content-Type: application/json
 {
-  "id_categoria": 1,
-  "descricao": "Salário",
+  "id_categoria": 4,
+  "descricao": "Salários",
   "finalidade": 1
 }
 

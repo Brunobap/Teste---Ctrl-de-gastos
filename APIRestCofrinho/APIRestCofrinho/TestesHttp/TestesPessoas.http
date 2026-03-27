@@ -6,7 +6,7 @@
 GET {{APIRestCofrinho_HostAddress}}/pessoa/
 
 ### GET de 1 pessoa pelo ID
-GET {{APIRestCofrinho_HostAddress}}/pessoa/5
+GET {{APIRestCofrinho_HostAddress}}/pessoa/2
 
 ### POST de 1 pessoa
 POST {{APIRestCofrinho_HostAddress}}/pessoas/
