@@ -1,8 +1,0 @@
-@Server_HostAddress = http://localhost:5337
-
-
-# Testes para o CRUD de Pessoas
-
-GET {{Server_HostAddress}}/pessoas/
-
-###
